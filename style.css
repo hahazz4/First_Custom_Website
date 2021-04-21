@@ -1,0 +1,159 @@
+/* Master Styles */
+
+/* Fonts to copy if needed: font-family: 'Teko', sans-serif; font-family: 'Fjalla One', sans-serif; font-family: 'Encode Sans Condensed', sans-serif;*/ 
+body{
+    margin: 0px; /* The margin of the website will change from the default margin pixels to 0 pixels */
+    padding: 0px;
+    background-color:black ;
+    min-width: 480px;
+}
+
+/*.adjuster{
+    min-width: auto;
+    min-height: auto;
+}*/
+
+.website{
+    display: grid;
+    grid-template-columns: 1fr; /* This will align the grid to be 1 fractional unit (100% end to end) */
+}
+
+/* Navigation Styles */
+
+.rightsidenav ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.rightsidenav ul{
+    position: top;
+    nav-right: 0%;
+    display: flex;
+}
+
+.rightsidenav ul li .fa {
+    font-size: 50px;
+    color: white;
+    line-height: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.leftsidenav{
+    display: flex;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.nav > .leftsidenav > div {
+    margin-right: 20px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+
+.navlinks{
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navlinks a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navlinks:hover{
+    border-bottom: 2px solid white;
+}
+
+.navlinks a:hover{
+    color:white;
+}
+
+.activenavlinks {
+    border-bottom: 2px solid white;
+}
+
+.activenavlinks a {
+    color: white !important;
+}
+
+/* Portfolio Styles */
+
+.portfoliocontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfoliocontent {
+margin-top: 500px;
+position: relative;
+}
+
+.portfolioimage {
+    height: 550px;
+    width: 100%;  
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgtext {
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-left: 100px;    
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 20%;
+}
+
+.imgtext .caption {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    min-width: 480px;
+}
+
+.imgtext:hover .caption {
+    font-weight: 600;
+    color:white;
+}
+
+.darkening {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About Me Styles */
+
+.twocolumnwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileimg {
+    width: 100%;
+}
+
+.profilecontent {
+    padding: 30px;
+    margin-right: 100px;
+}
+
+.profilecontent h1 {
+    color: white;
+}

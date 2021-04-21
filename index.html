@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meth charset="utf-8" />
+    <title>The Life of Zeerak Asim</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="adjuster" width: 100%; max-width: 1920px; margin-left: 0px;>
+        <div class="website">
+            <div class="nav">
+                <div class="leftsidenav">
+                    <div class="navlinks activenavlinks">    
+                        <a href="index.html">Home</a>
+                    </div>            
+
+                        <div class="navlinks">
+                            <a href="aboutme.html">About Me</a>
+                        </div>                
+                </div>  
+
+                <div class="rightsidenav">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/zeerak-asim-7a62101b9/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:Z_zee09@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/hahazz4"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+ 
+            </div>   
+        </div>
+
+        <div class="content">
+            <div class="portfoliocontent">
+                <div class="portfoliowrap">
+                    <div class="portfolioimage" style="background-image: url(images/game\ image.PNG)"></div>               
+            
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="images/lmao.PNG"> 
+                        </div>
+                            <div class="caption">
+                                
+                                <p><b><u> The Adventures of Eren</u></b></p>
+                                This is my first ever game I developed. It is based off of Pokemon. 
+                                <p>I made it through Unity Engine, and coded the game using C# on Visual Studio.</p>
+                            </div>
+                    </div>
+                </div> 
+                
+                <div class="portfoliowrap">
+                    <div class="portfolioimage" style="background-image: url(images/module1\ pic.jpeg)"></div>               
+            
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="images/discord minorities april fools ping.png">
+                        </div>
+                            <div class="caption">
+                                poggers my name is zeerak how are you doing buddy.
+                                <p>lol nice day this is testing 123 hello hello</p> 
+                            </div>
+                    </div>
+                </div>
+
+                <div class="portfoliowrap">
+                    <div class="portfolioimage" style="background-image: url(images/game\ image.PNG)"></div>               
+            
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="images/lmao.PNG"> 
+                        </div>
+                            <div class="caption">
+                                This is my first ever game I developed. It is based off Pokemon. 
+                                <p>I made it through Unity Engine, and coded the game using C# on Visual Studio.</p>
+                            </div>
+                    </div>
+                </div> 
+            
+            </div>
+        </div>
+    </div>    
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll('.portfoliowrap')
+
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseover', () => {
+            console.log(portfolioitem.childNodes[1].classList);
+            portfolioitem.childNodes[1].classList.add('darkening');
+        })
+
+        portfolioitem.addEventListener('mouseout', () => {
+            portfolioitem.childNodes[1].classList.remove('darkening');
+        })
+    })    
+</script>
+</html>

@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    margin: 0px; /* The margin of the website will change from the default margin pixels to 0 pixels */
+    padding: 0px;
+    background-color:black ;
+    min-width: 1000px;
+    min-height: 1000px;
+}
+
+.rightsidenav ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.rightsidenav ul{
+    position: top;
+    right: 0%;
+    display: flex;
+}
+
+.rightsidenav ul li .fa {
+    font-size: 50px;
+    color: white;
+    line-height: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.leftsidenav{
+    display: flex;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.nav > .leftsidenav > div {
+    margin-right: 20px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+
+.navlinks{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navlinks a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navlinks:hover{
+    border-bottom: 2px solid white;
+}
+
+.navlinks a:hover{
+    color:white;
+}
+
+.activenavlinks {
+    border-bottom: 2px solid white;
+}
+
+.activenavlinks a {
+    color: white !important;
+}
